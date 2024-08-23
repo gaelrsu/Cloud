@@ -21,4 +21,4 @@ A X utilisations possible : Lacs de données, sites web, app mobiles, sauvegarde
 
   ## MEP
 
-  Dans la barre de recherche : S3 -> "Créer un bucket" -> donner un nom 
+  Dans la barre de recherche : S3 -> "Créer un bucket" -> donner un nom -> choisir "Listes ACL activées" -> Gestion des versions de compartiment "Activer" -> Ajouter les Balises clé : "Departement" Valeur: "Marketing" -> Créer
