@@ -19,17 +19,65 @@ A X utilisations possible : Lacs de données, sites web, app mobiles, sauvegarde
 - S3 Intelligent si on ne connais pas le schéma d'accès des données ou si elles sont imprévisibles, permet d'éviter les impacts sur la perf et réduit les frais/couts \
   ex : charge de travail non prévisible, inconnue ou à évolution rapide
 
-  ## MEP
-  ### Créer le Bucket
+## MEP
+### Créer le Bucket
   Dans la barre de recherche : S3 -> "Créer un bucket" -> donner un nom -> choisir "Listes ACL activées" -> Gestion des versions de compartiment "Activer" -> Ajouter les Balises clé : "Departement" Valeur: "Marketing" -> Créer
-
-  ### Configurer un site web sur S3
+### Configurer un site web sur S3
   Dans les configurations du S3, aller dans "Propriétés" puis défiler jusqu'à "Static website hosting " -> "Modifier" -> "Activer" -> entrer un document d'index et d'erreur -> sauvegarder \
   Toujours dans "Propriétés" cliquer sur le lien tout en bas pour accéder à la page
-  ### Chargement du contenu 
-  Vous pouvez charger les codes sources directement depuis la page du S3 -> dans le S3 -> Objets -> ajouter les fichierrs 
-  ### Activer de l'accès 
+### Chargement du contenu 
+  Vous pouvez charger les codes sources directement depuis la page du S3 -> dans le S3 -> Objets -> charger -> ajouter les fichiers -> Charger
+### Activer de l'accès 
   Selectionner les 3 objets du S3 -> Actions -> Rendre public à l'aide de la liste ACL -> Rendre public 
-  ### Partager en toute sécurité d'un objet en utilisant une URL présignée
+### Partager un objet en utilisant une URL présignée avec une durée
+  Choisir l'objet -> Actions -> Partager avec une URL présignée -> choisir la durée -> Créer une URL présignée -> en haut copier l'URL présignée 
+### politique de compartiment
+  Dans Votre bucket -> Autorisations -> Stratégie de compartiment -> ex pour empecher la suppression : 
+  ```
+{
+    "Version": "2012-10-17",
+    "Id": "MyBucketPolicy",
+    "Statement": [
+        {
+            "Sid": "BucketPutDelete",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:DeleteObject",
+            "Resource": [
+                "arn:aws:s3:::<bucket-name>/index.html",
+                "arn:aws:s3:::<bucket-name>/script.js",
+                "arn:aws:s3:::<bucket-name>/style.css"
+# bucket-name à changer
+        ]
+        }
+    ]
+}
+```
+ Enregistrer la modification 
+ ### Mise à jour du site web
+  charger le nouveau fichier  -> Choisir l'objet -> Actions -> "Rendre public en utilisant ACL" -> Rendre public 
+### versions de fichiers 
+  Dans les objets cocher l'option en haut "Afficher les Versions"
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
