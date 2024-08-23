@@ -18,3 +18,7 @@ A X utilisations possible : Lacs de données, sites web, app mobiles, sauvegarde
   ex : Sauvegarde, archive qui doit être conservé pendant une longue durée (souvent à des fins de conformité)
 - S3 Intelligent si on ne connais pas le schéma d'accès des données ou si elles sont imprévisibles, permet d'éviter les impacts sur la perf et réduit les frais/couts \
   ex : charge de travail non prévisible, inconnue ou à évolution rapide
+
+  ## MEP
+
+  Dans la barre de recherche : S3 -> "Créer un bucket" -> donner un nom 
