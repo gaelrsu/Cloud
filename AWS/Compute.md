@@ -1,4 +1,4 @@
-# Compute 
+# Compute
 ## les différents services de calcul
 ### EC2
 Fournit une capacité de calcul sécurisée et redimensionnable, utilisé pour metter en service des serveurs virtuels (appelé EC2) qui gèrent les besoins informatique.
@@ -12,4 +12,16 @@ Permet de démarrer et exécuter les applis Kubernetes dans les cloud AWS ou sur
 Moteur de calcul sans serveur, pour les conteneurs (pour ECS et EKS). Il alloue la bonne quantité de calcul.
 ### Elastic Beantalk
 Après lui avoir donner du code, il effectue automatiquement les étapes de déploiement. (Mise en service, répartition des charges, mise à l'chelle, surveillance)
+
+## Les différentes familles
+Famille T \
+Famille M \
+Famille C \
+Famille P \
+Famille R \
+Ex : t3.large => t-> nom de la famille / 3 -> numéro de la génération / large -> taille de l'instace
+
+
+
+
 
