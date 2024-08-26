@@ -13,6 +13,7 @@ Moteur de calcul sans serveur, pour les conteneurs (pour ECS et EKS). Il alloue 
 ### Elastic Beantalk
 Après lui avoir donner du code, il effectue automatiquement les étapes de déploiement. (Mise en service, répartition des charges, mise à l'chelle, surveillance)
 
+/!\ Un EC2 avec un "store volume" ne gardera pas ses données en cas de reboot contrairement à un EBS
 ## Les différentes familles
 Famille T \
 Famille M \
