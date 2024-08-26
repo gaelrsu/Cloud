@@ -21,11 +21,11 @@ Famille P \
 Famille R \
 Ex : t3.large => t-> nom de la famille / 3 -> numéro de la génération / large -> taille de l'instace
 ### Catégories d'instances
-Polyvalentes (assurent l'équilibre entre les ressources de calcul, la mémoire et les ressources réseau ex: serveurs web) : A1, M4, M5, T2, T3
-Optimisées pour le calcul (charges de travail de traitement par lots, transcodage de fichiers multimédias autres applis à forte intensité de calcul) : C4, C5
-Optimisées en mémoire (fournir des performances rapides pour les charges de travail traitant des grands ensembles de données en mémoire) : R4, R5, X1, Z1
-Calcul accéléré (Coprocesseur, execute certaines fonctions telles que les calculs des nombres à virgule flottante, traitement graphique..) : F1, G3, G4, P2, P3
-Optimisée pour le stockage (optimisées pour fournir aux applications des dizaines de milliers d'opérations aléatiores à faible temps de latence) : D2, H1, I3
+Polyvalentes (assurent l'équilibre entre les ressources de calcul, la mémoire et les ressources réseau ex: serveurs web) : A1, M4, M5, T2, T3 \
+Optimisées pour le calcul (charges de travail de traitement par lots, transcodage de fichiers multimédias autres applis à forte intensité de calcul) : C4, C5 \
+Optimisées en mémoire (fournir des performances rapides pour les charges de travail traitant des grands ensembles de données en mémoire) : R4, R5, X1, Z1 \
+Calcul accéléré (Coprocesseur, execute certaines fonctions telles que les calculs des nombres à virgule flottante, traitement graphique..) : F1, G3, G4, P2, P3 \
+Optimisée pour le stockage (optimisées pour fournir aux applications des dizaines de milliers d'opérations aléatiores à faible temps de latence) : D2, H1, I3 \
 
 
 
