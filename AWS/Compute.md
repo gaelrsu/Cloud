@@ -12,7 +12,7 @@ Permet de démarrer et exécuter les applis Kubernetes dans les cloud AWS ou sur
 Moteur de calcul sans serveur, pour les conteneurs (pour ECS et EKS). Il alloue la bonne quantité de calcul.
 ### Elastic Beantalk
 Après lui avoir donner du code, il effectue automatiquement les étapes de déploiement. (Mise en service, répartition des charges, mise à l'chelle, surveillance)
-
+______________________________________________________________________________________
 /!\ Un EC2 avec un "store volume" ne gardera pas ses données en cas de reboot contrairement à un EBS
 ## Les différentes familles
 Famille T \
