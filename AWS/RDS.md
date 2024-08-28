@@ -22,6 +22,7 @@ L'Internet Gateway doit être présente \
 Les accès, l'authentification
 
 ## Exemple
+```
     At the top of these instructions, select Start Lab to launch your lab.
 
     A Start Lab panel opens displaying the lab status.
@@ -131,6 +132,7 @@ This is the logical name of the database that the application will use.
  You can review the few other options displayed on the page, but leave them set to their default values. Options include automatic backups, Log exports, Encryption and automatic version upgrades. The ability to activate these features with check boxes demonstrates the power of using a fully managed database solution instead of installing, backing up, and maintaining the database yourself.
 
     At the bottom of the page, choose Create database
+```
 
     You should receive this message: Creating database inventory-db.
 
