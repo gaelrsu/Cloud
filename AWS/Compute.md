@@ -29,4 +29,15 @@ Calcul accéléré (Coprocesseur, execute certaines fonctions telles que les cal
 Optimisée pour le stockage (optimisées pour fournir aux applications des dizaines de milliers d'opérations aléatiores à faible temps de latence) : D2, H1, I3 \
 
 
+## Exemple
+```
+1. Dans la zone Search de la Console de gestion AWS, saisissez EC2, puis cliquez sur Enter.
+2. Dans les résultats de recherche, sélectionnez EC2.
+3. Dans la section Launch instance, cliquez sur Launch instance
+4. Dans le volet Name and tags, dans la zone de texte Name, saisissez Web-Server
+puis cliquez sur Enter.
+5. Cliquez sur le lien Add additional tags.
+6. Dans la liste déroulante Resource types, Instances est sélectionné par défaut. Laissez
+Instances sélectionné et sélectionnez Volumes.
 
+```
