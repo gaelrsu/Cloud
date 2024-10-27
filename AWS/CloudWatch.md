@@ -94,10 +94,23 @@ fields @timestamp, @message
 | sort @timestamp desc
 | limit 10
 ```
+Mathematical and Comparative Operations
+```
+fields @timestamp, @responseTime
+| stats avg(responseTime) as avgResponseTime
+| filter @responseTime > avgResponseTime * 2
+```
+Exemple of Security Incident Detection
+```
+fields @timestamp, @message
+| filter @message like 'Failed login attempt'
+| sort @timestamp desc
+| limit 10
 ```
 ```
-```
-```
+fields @timestamp, @message
+| filter @message like 
+/.*(SELECT|UNION|INSERT|UPDATE|DELETE|FROM|WHERE|DROP|AND|OR).*/
 ```
 
 
