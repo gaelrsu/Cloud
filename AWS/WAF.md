@@ -79,3 +79,39 @@ Create a new IP set.
 Define the IP addresses or ranges you want to include in the set.
 Use this IP set in your web ACL rules to either allow or block traffic from these addresses.
 ```
+
+_______________________________________________________________________________________
+
+2 differents types of rules to be more specific in term of detecting threaths
+1- Account creation fraud prevention
+	when you have a registration page -> to see what they are trying to do (ex impersonnating, create a temporary account ....) -> add -> Customize : path of the registration page , payload type 
+2- Account takeover prevention 
+	when someone is logging in (stolen cred ? ), brute force loggin , loggin activity. 
+	Bot control -> add to web acl -> Edit -> Targeted (advanced rules) | common (few rules inside) 
+		Free rule groups : admin protection (exclude access to admin page) | Amazon IP reputation (ex: exclude list fw) | Anonymous IP list (bloc when trying to hide their identity whith for exemple vpn, proxy tornode etc  | Know bad input (help to identify bad payload) ....
+ 	(Core rule set :: ex No user agent header, is likely a form of a script whe have the possibility to blos those requests) 
+
+Set Rule priority :
+	like a firewall up then down 
+
+Logging and metrics : 
+	Cloudwatch : where you found metrics, alarms etc 
+	Amazon data firehouse stream : collect all differents event in real times
+	S3 bucket : S3 to store all request
+
+# AWS WAF - Web ACLs
+Sampled requests : it's help us look into some of requests
+CloudWatch log : allow us to see logs with specifics rules ( ex : top 100 ip address)
+
+# AWS WAF - Bot Control 
+Created by cloudfront 
+(curl is blocked by cloudfront becaus we have a strage user agent) 
+
+# AWS WAF - Regex pattern sets
+can add sql injection, XSS in it
+
+# AWS WAF - Rule groups 
+create groups to be reused by differents web ACL  EX : 
+	'Name' -> NEXT -> Add a rule -> Inspect => single header , user-agent , countains SQL injection attacks -> add rule
+Now add it : AWS WAF -> Web ACLs -> clic on 'web acls name' -> Rules -> Add rules -> Add my own rules and rule groups
+-> Rule group ->  'Name' -> choose the rule group -> add rule 
