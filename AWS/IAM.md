@@ -1,4 +1,4 @@
-#IAM
+# IAM
 
 An IAM policy can be attached to 
 users : Granted access to EC2 / S3
