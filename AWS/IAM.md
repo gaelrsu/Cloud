@@ -61,7 +61,7 @@ The NotResource element helps to ensure that users can’t use any other DynamoD
 }
 
 ```
-
+# Identity based policies
 ## AWS managed policies
 AWS managed policies are managed policies that are created and managed by AWS. If you are new to using policies, we recommend that you start by using AWS managed policies. IAM has a library of over 1,000 AWS managed policies.
 
@@ -70,3 +70,8 @@ Customer-managed policies are managed policies that you create and manage in you
 
 ## Inline policies
 Inline policies are policies that you create and manage and that are embedded directly into a single user, group, or role. Using inline policies to grant permissions to users is high maintenance and not recommended.
+
+# Resource based policies 
+These policies specify who can access the resource and what actions they can perform on it.
+That type of policy is defined on the resource itself instead of creating a separate IAM policy document to attach.
+
