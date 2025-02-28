@@ -4,6 +4,9 @@ An IAM policy can be attached to
 users : Granted access to EC2 / S3
 group
 rôle
+#List
+
+https://github.com/TryTryAgain/aws-iam-actions-list
 
 ## User Exemples : 
 
