@@ -5,9 +5,15 @@ users : Granted access to EC2 / S3
 group
 rôle
 
-#List
+#Liens
 
-https://github.com/TryTryAgain/aws-iam-actions-list
+	§ https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar.html
+	§ https://www.datadoghq.com/blog/iam-least-privilege/
+
+	§ https://github.com/TryTryAgain/aws-iam-actions-list
+
+	§ https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html
+
 
 ## User Exemples : 
 
