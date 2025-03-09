@@ -112,6 +112,13 @@ fields @timestamp, @message
 | filter @message like 
 /.*(SELECT|UNION|INSERT|UPDATE|DELETE|FROM|WHERE|DROP|AND|OR).*/
 ```
-
+Exemple of Detect failed login
+```
+fields @timestamp, eventName, userIdentity.arn, sourceIPAddress, responseElements.ConsoleLogin
+| filter eventName="ConsoleLogin"
+| filter responseElements.ConsoleLogin="Failure"
+| sort @timestamp desc
+| limit 20
+```
 
 
