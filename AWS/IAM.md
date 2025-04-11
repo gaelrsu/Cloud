@@ -1,4 +1,5 @@
 # IAM
+simulator : https://policysim.aws.amazon.com/home/index.jsp?#roles/role-regis-test-iam-policies
 
 An IAM policy can be attached to 
 users : Granted access to EC2 / S3
