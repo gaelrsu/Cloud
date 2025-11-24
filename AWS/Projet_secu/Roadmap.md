@@ -127,7 +127,7 @@ cloud-sec-aws/
 
 * Backend remote : S3 + DynamoDB lock.
 * Module standardisé.
-* Terraform validate/fmt.
+* Terraform validate/init.
 
 **Livrables :** backend Terraform opérationnel.
 
@@ -135,7 +135,7 @@ cloud-sec-aws/
 
 ## Semaine 7 — CI/CD Sécurisé (GitLab)
 
-* Pipelines : fmt, validate, plan, apply.
+* Pipelines : init, validate, plan, apply.
 * Scan sécurité IaC : tfsec, checkov.
 * Branch protection.
 
@@ -204,16 +204,16 @@ Créer de zéro une infra sécurisée complète :
 
 ```
 stages:
-  - fmt
+  - init
   - validate
   - plan
   - apply
 
-terraform_fmt:
-  stage: fmt
+terraform_init:
+  stage: init
   image: hashicorp/terraform:1.5.0
   script:
-    - terraform fmt -check
+    - terraform init -check
 
 terraform_validate:
   stage: validate
