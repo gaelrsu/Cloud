@@ -50,3 +50,24 @@ Attach existing policies directly → sélectionner ReadOnlyAccess pour commence
 Add user to group → crée un groupe et attache la policy désirée.
 
 Finir la création et télécharger le fichier CSV contenant l’Access Key ID et Secret Access Key si accès programmatique.
+
+
+-----------------------
+Exemple de policy JSON 
+```
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Effect": "Allow",
+"Action": [
+"ec2:Describe*",
+"s3:ListBucket",
+"s3:GetObject",
+"iam:ListUsers"
+],
+"Resource": "*"
+}
+]
+}
+```
