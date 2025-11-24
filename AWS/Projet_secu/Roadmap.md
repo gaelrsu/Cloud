@@ -1,12 +1,10 @@
-# Parcours de Formation — Ingénieur Cloud Sécurité AWS
-
-Ce document est une version **100% Markdown**, idéale pour être placée directement dans ton dépôt GitLab (`README.md` ou `docs/projet.md`).
+# Parcours de Formation — Sécurité AWS
 
 ---
 
 ## 🎯 Objectif
 
-Devenir **Ingénieur Cloud Sécurité AWS**, en combinant :
+Devenir **Sécurité AWS**, en combinant :
 
 * Infrastructure AWS (Free Tier)
 * Pratique offensive/défensive
@@ -14,11 +12,11 @@ Devenir **Ingénieur Cloud Sécurité AWS**, en combinant :
 * CI/CD GitLab
 * Logging, monitoring, hardening
 
-À chaque étape, tu prendras des **notes structurées** pour suivre ta progression.
+À chaque étape, prendre des **notes structurées** pour suivre la progression.
 
 ---
 
-## 📁 Structure recommandée du dépôt
+## 📁 Structure du dépôt
 
 ```
 cloud-sec-aws/
@@ -63,7 +61,7 @@ cloud-sec-aws/
 
 ---
 
-# 🗂️ Programme complet (12 semaines)
+# 🗂️ Programme complet sur 12 semaines
 
 ## Semaine 0 — Préparation
 
@@ -245,21 +243,4 @@ terraform_apply:
 
 ---
 
-# 📚 Ressources utiles
-
-* AWS Well-Architected — Security Pillar
-* CIS AWS Foundations Benchmark
-* Terraform Registry + documentation Hashicorp
-* tfsec, checkov
-* OWASP + Cloud Security Alliance
-
----
-
-Si tu veux, je peux aussi :
-
-* Générer un **README complet** adapté à ton repo,
-* Générer le fichier `docs/notes.md`,
-* Générer l’arborescence Markdown prête à copier/coller dans GitLab.
-
-Dis-moi ce que tu préfères !
 
