@@ -120,8 +120,6 @@ EC2 instance communicated with a Tor exit node
 
 # 5. Investigation Process
 
-Assume the role of a **cloud SOC analyst**.
-
 Key elements to review:
 
 ## Timeline
