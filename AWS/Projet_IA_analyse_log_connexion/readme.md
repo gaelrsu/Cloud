@@ -82,12 +82,12 @@ Threshold Crossed: 1 out of the last 1 datapoints [7.0] was greater than the thr
 
 Détail CloudTrail — 7 échec(s) unique(s)
 Users ciblés : Root, Analyst
-IPs sources : 86.237.54.194
+IPs sources : 86.237.004.004
 Régions : eu-west-1, eu-north-1
 
 🔍 Analyse
 19 tentatives de connexion échouées sur le compte Root en ~13 minutes
-depuis l'IP 86.237.54.194, toutes sans MFA, suggérant une attaque
+depuis l'IP 86.237.004.004, toutes sans MFA, suggérant une attaque
 par force brute ou vol de credentials.
 
 ⚠️ Risque
@@ -95,7 +95,7 @@ par force brute ou vol de credentials.
 absence de MFA + taux d'échecs élevé = vecteur critique.
 
 🛠️ Action
-1. Bloquer immédiatement l'IP 86.237.54.194 via WAF/Security Group
+1. Bloquer immédiatement l'IP 86.237.004.004 via WAF/Security Group
 2. Forcer un changement de mot de passe Root + activer MFA obligatoire
 3. Auditer CloudTrail pour connexions réussies dans les 24h précédentes
 ```
