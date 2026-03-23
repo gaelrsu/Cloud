@@ -203,7 +203,7 @@ Pour les nouveaux comptes AWS, Anthropic impose de soumettre un formulaire d'usa
 | Timeout | **30 secondes** (Bedrock peut prendre 3-5s) |
 | Memory | 128 MB |
 
-Code source : [`lambdas/security-enricher/lambda_function.py`](lambdas/security-enricher/lambda_function.py)
+Code source : [`lambdas/security-enricher/lambda_function.py`](https://github.com/gaelrsu/Cloud/blob/main/AWS/Projet_IA_analyse_log_connexion/Lambda_IA.py)
 
 **Tester avec ce payload dans l'onglet Test :**
 
