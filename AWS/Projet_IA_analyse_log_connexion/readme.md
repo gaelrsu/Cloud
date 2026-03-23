@@ -210,9 +210,9 @@ Code source : [`lambdas/security-enricher/lambda_function.py`](https://github.co
 ```json
 {
   "alarm_name": "ConsoleLoginFailures",
-  "alert_message": "5 échecs de connexion console détectés en 2 minutes depuis 185.234.12.45",
+  "alert_message": "5 échecs de connexion console détectés en 2 minutes depuis 185.234.2.5",
   "details": {
-    "sourceIPAddress": "185.234.12.45",
+    "sourceIPAddress": "185.234.2.5",
     "eventName": "ConsoleLogin",
     "errorMessage": "Failed authentication"
   }
@@ -298,7 +298,7 @@ La Lambda existante (`sendToDiscord`) reçoit les messages SNS et les envoie sur
 2. Appeler `security-alert-enricher` avec ce contexte enrichi
 3. Envoyer le message enrichi sur Discord avec un fallback si Bedrock est indisponible
 
-Code source complet : [`lambdas/alert-dispatcher/lambda_function.py`](lambdas/alert-dispatcher/lambda_function.py)
+Code source complet : [`lambdas/alert-dispatcher/lambda_function.py`](https://github.com/gaelrsu/Cloud/blob/main/AWS/Projet_IA_analyse_log_connexion/lambda.py)
 
 **Paramètre de configuration à modifier :**
 - Timeout : **30 secondes** (Logs Insights + Bedrock = ~5-10s)
