@@ -48,7 +48,7 @@ Ce lab construit un pipeline de détection et d'analyse de sécurité AWS enrich
 │                      │                                          │
 │                   SNS Topic                                     │
 │                      │                                          │
-│              Lambda sendToDiscord ◄─────────────────────────┐   │
+│              Lambda sendToDiscord ◄──────────────────────────┐  │
 │                      │                                       │  │
 └──────────────────────┼───────────────────────────────────────┼──┘
                        │         Enrichissement IA (nouveau)   │
