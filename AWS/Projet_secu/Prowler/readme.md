@@ -38,7 +38,7 @@ The infrastructure is 100% automated using **Terraform** and operates on a serve
                │     SNS Notifications│ ──► [ Slack / Teams / Email ]
                └──────────────────────┘
 
-
+```
 
 ### Workflow
 - Trigger: An AWS EventBridge Rule initiates the pipeline on a scheduled basis (e.g., weekly or post-deployment).
