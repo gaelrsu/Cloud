@@ -40,6 +40,68 @@ The infrastructure is 100% automated using **Terraform** and operates on a serve
 
 ```
 
+# STEP 1 Activate AWS Security Hub
+```
+  
+```
+
+# STEP 2 Add Prowler to Security Hub 
+
+
+
+
+# STEP 3 create user & role
+
+
+
+
+
+# STEP 4 Excecute Prowler (test)
+
+
+
+
+
+
+# STEP 5 Check the findings
+
+
+
+
+
+# STEP 6 Automated with CodeBuild and EventBridge
+
+
+
+
+
+# STEP 7 Check
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
