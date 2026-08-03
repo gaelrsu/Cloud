@@ -37,3 +37,29 @@ The infrastructure is 100% automated using **Terraform** and operates on a serve
                │ Amazon EventBridge / │
                │     SNS Notifications│ ──► [ Slack / Teams / Email ]
                └──────────────────────┘
+
+
+
+### Workflow
+- Trigger: An AWS EventBridge Rule initiates the pipeline on a scheduled basis (e.g., weekly or post-deployment).
+
+- Execution: AWS CodeBuild pulls the official Prowler Docker container and executes the compliance scans against the AWS account using a dedicated least-privilege IAM Role.
+
+- Ingestion: Findings are formatted into AWS Security Finding Format (ASFF) and published directly into AWS Security Hub.
+
+- Archival & Alerting: Full raw reports (CSV/JSON/HTML) are archived in an encrypted S3 bucket, and critical alerts generate immediate SNS/Slack notifications.
+
+
+### Features
+- Continuous Compliance Auditing: Automated assessment against CIS Benchmarks, NIS 2, DORA, GDPR, and ISO 27001.
+
+- Centralized Visibility: Seamless integration with AWS Security Hub for a single-pane-of-glass security dashboard.
+
+- Serverless & Cost-Effective: Runs exclusively on-demand using AWS CodeBuild and EventBridge (~$0/month for standard accounts).
+
+- Infrastructure as Code (IaC): Fully deployable within minutes using Terraform.
+
+- Zero Persistent Credentials: Uses IAM Service Roles and temporary security credentials (STS).
+
+
+
