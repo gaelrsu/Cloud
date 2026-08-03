@@ -50,7 +50,7 @@ The infrastructure is 100% automated using **Terraform** and operates on a serve
 - Archival & Alerting: Full raw reports (CSV/JSON/HTML) are archived in an encrypted S3 bucket, and critical alerts generate immediate SNS/Slack notifications.
 
 
-### Features
+### 📋 Features
 - Continuous Compliance Auditing: Automated assessment against CIS Benchmarks, NIS 2, DORA, GDPR, and ISO 27001.
 
 - Centralized Visibility: Seamless integration with AWS Security Hub for a single-pane-of-glass security dashboard.
@@ -62,7 +62,7 @@ The infrastructure is 100% automated using **Terraform** and operates on a serve
 - Zero Persistent Credentials: Uses IAM Service Roles and temporary security credentials (STS).
 
 
-### Getting Started
+### 🚀 Getting Started
 Prerequisites
 - An active AWS Account with permissions to deploy IAM, Security Hub, EventBridge, and CodeBuild.
 
@@ -89,7 +89,7 @@ terraform init
 terraform plan
 terraform apply
 ```
-### Configuration & Customization
+### ⚙️ Configuration & Customization
 You can customize the compliance frameworks and scan schedules via terraform.tfvars:
 ```
 Terraform
@@ -98,7 +98,7 @@ compliance_framework = ["cis_1.5_aws", "nis2_aws"]
 schedule_expression  = "cron(0 8 ? * MON *)" # Every Monday at 08:00 UTC
 notification_email  = "security-alerts@yourcompany.com"
 ```
-### Security Hub Dashboard & Results
+### 📊 Security Hub Dashboard & Results
 Once the scan completes, security findings appear in AWS Security Hub categorized by severity (CRITICAL, HIGH, MEDIUM, LOW).
 | Compliance Check | Status | Severity | Remediation Action |
 | :--- | :--- | :--- | :--- |
