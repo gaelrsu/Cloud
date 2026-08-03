@@ -62,4 +62,58 @@ The infrastructure is 100% automated using **Terraform** and operates on a serve
 - Zero Persistent Credentials: Uses IAM Service Roles and temporary security credentials (STS).
 
 
+### Getting Started
+Prerequisites
+- An active AWS Account with permissions to deploy IAM, Security Hub, EventBridge, and CodeBuild.
+
+- Terraform >= 1.5.0 installed.
+
+- AWS CLI configured locally.
+
+### Installation
+1. Clone the repository:
+```
+git clone [https://github.com/](https://github.com/)[your-username]/aws-prowler-securityhub-automation.git
+cd aws-prowler-securityhub-automation
+```
+2. Enable AWS Security Hub Integration:
+
+- Go to AWS Security Hub console > Integrations.
+
+- Search for Prowler and click Accept findings.
+
+3. Deploy with Terraform:
+```
+cd terraform/
+terraform init
+terraform plan
+terraform apply
+```
+### Configuration & Customization
+You can customize the compliance frameworks and scan schedules via terraform.tfvars:
+```
+Terraform
+aws_region          = "eu-west-3"
+compliance_framework = ["cis_1.5_aws", "nis2_aws"]
+schedule_expression  = "cron(0 8 ? * MON *)" # Every Monday at 08:00 UTC
+notification_email  = "security-alerts@yourcompany.com"
+```
+### Security Hub Dashboard & Results
+Once the scan completes, security findings appear in AWS Security Hub categorized by severity (CRITICAL, HIGH, MEDIUM, LOW).
+| Compliance Check | Status | Severity | Remediation Action |
+| :--- | :--- | :--- | :--- |
+| **S3.1** S3 Block Public Access | `FAILED` | **HIGH** | Enable S3 Account Level Block Public Access |
+| **IAM.1** Root User MFA Enabled | `PASSED` | **CRITICAL** | N/A |
+| **EC2.2** Unrestricted Security Group Ingress | `FAILED` | **HIGH** | Restrict port 22/389 ingress to VPN IPs |
+
+### Security & Least Privilege
+The IAM Role created for Prowler follows the principle of least privilege:
+
+- Attached AWS Managed Policy: SecurityAudit and ViewOnlyAccess.
+
+- Custom Inline Policy: Explicit permissions for securityhub:BatchImportFindings and S3 report delivery.
+
+
+
+
 
