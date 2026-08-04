@@ -123,7 +123,7 @@ absence de MFA + taux d'échecs élevé = vecteur critique.
 
 ### Prérequis
 
-- Compte AWS (Free Tier suffisant)
+- Compte AWS (Free Tier est suffisant)
 - CloudTrail activé avec un log group CloudWatch configuré
 - Une alarme CloudWatch existante sur les échecs `ConsoleLogin`
 - Une Lambda existante abonnée au SNS topic envoyant sur Discord
