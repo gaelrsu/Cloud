@@ -2,7 +2,7 @@
 
 [![AWS](https://img.shields.io/badge/AWS-CloudTrail%20%7C%20CloudWatch%20%7C%20SNS-orange?style=flat-square&logo=amazon-aws)](https://aws.amazon.com/)
 [![Security](https://img.shields.io/badge/Security-Monitoring%20%26%20Alerting-red?style=flat-square)](https://aws.amazon.com/security/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+
 
 ## 📌 Project Overview
 
