@@ -43,7 +43,6 @@ This project delivers a **lightweight, cost-effective Security Operations (SecOp
                |
     +----------+----------+
     | Email / Lambda      |
-    | (Discord/Slack)     |
     +---------------------+ 
 
 
